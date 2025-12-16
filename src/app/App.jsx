@@ -1,7 +1,8 @@
+import MainPage from "../pages/main-page";
 import "./App.css";
 
 const App = () => {
-  return <></>;
+  return <MainPage/>
 };
 
 export default App;
