@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Header from "../../widgets/header";
 import { useEffect } from "react";
 import axios from "axios";
 import { getVideoUrl } from "../../features/api";
