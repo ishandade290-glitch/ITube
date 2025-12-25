@@ -4,6 +4,8 @@ import axios from "axios";
 import { getVideoUrl } from "../../features/api";
 import { formatVideoData } from "../../features/converters/format-video";
 import VideoCart from "../../shared/ui/content/VideoCart";
+import Header from "../../widgets/header"
+
 
 const MainPage = () => {
     const [videos, setVideos] = useState([])
@@ -21,12 +23,13 @@ const MainPage = () => {
   
   return (
   <>
+    <Header/>
     <div
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 mt-6 ml-4 mr-4">
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-x-4 gap-y-8 mt-6 ml-4 mr-4">
       {videos.map((video) => (
       <VideoCart key={video.videoWatchUrl} {...video}/>
       ))}
-      <button onClick = {fetchVideos}>Load more</button>
+      <button className="" onClick = {fetchVideos}>Load more</button>
     </div>
   </>
   );

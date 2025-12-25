@@ -1,7 +1,6 @@
 import AvatarIcon from "../../shared/ui/icons/AvatarIcon";
 import SearchIcon from "../../shared/ui/icons/SearchIcon";
 import ItubeIcon from "../../shared/ui/icons/youtubeicon";
-import VideoCart from "../../shared/ui/content/VideoCart";
 
 const Header = () => {
   return (
@@ -13,10 +12,10 @@ const Header = () => {
         <div className="items-center hidden sm:flex">
           <input
             placeholder="Введите запрос ..."
-            className=" w-[clamp(50px,35vw,500px)] p-1 bg-transparent border-2 border-black-500/75 rounded-l-full px-3 py-1"
+            className="  w-[clamp(50px,35vw,500px)] p-1 bg-transparent border-2 border-[#f8f8f8] rounded-l-full px-3 py-1"
             type="text"
           />
-          <button className="flex items-center rounded-r-full bg-[#f8f8f8] p-1">
+          <button className="flex items-center rounded-r-full bg-[#f8f8f8] p-1.5">
             <SearchIcon />
           </button>
         </div>
